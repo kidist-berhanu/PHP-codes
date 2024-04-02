@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <style>
-        table{
-            width:500px; 
-            height:500px;
+        table {
+            width: 500px; 
+            height: 500px;
+        }
+        .blue-black {
+            background-color: #000080; /* Blue-black color */
+        }
+        .cream {
+            background-color: #FFFDD0; /* Cream color */
         }
     </style>
     <meta charset="UTF-8">
@@ -13,26 +19,26 @@
 </head>
 <body>
 <table border="1" style="">
-    // PHP script to generate rows and columns for the chessboard
+    
     <?php 
     for($i=1 ; $i<=8 ; $i++)
     {
-    echo "<tr>";
+        echo "<tr>";
         for($j=1 ; $j<=8; $j++)
         { 
             if( ($i+$j)%2==0 )
             {
-                echo "<td height=30px width=30px bgcolor=#FFFFFF> </td>";
+                echo "<td height=30px width=30px class='cream'> </td>";
             }
             else
             {
-                echo "<td height=30px width=30px bgcolor=#000000> </td>";
+                echo "<td height=30px width=30px class='blue-black'> </td>";
             }
         }
-    echo "</tr>";
+        echo "</tr>";
     }?>
-
-    </table>
+    
+</table>
 
 </body>
 </html>
