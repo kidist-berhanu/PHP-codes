@@ -13,7 +13,7 @@
 </head>
 <body>
 <table border="1" style="">
-    
+    // PHP script to generate rows and columns for the chessboard
     <?php 
     for($i=1 ; $i<=8 ; $i++)
     {
