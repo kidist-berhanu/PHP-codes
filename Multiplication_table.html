@@ -6,15 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+  <!-- Table structure to display multiplication table -->
   <table border="2" style="cellpadding = 3px">
-    <?php for($i=1 ; $i<=12 ; $i++)
+    <?php 
+    // PHP script to generate rows and columns for the multiplication table
+    for($i=1 ; $i<=12 ; $i++)
     {?>
        <tr>
             <?php 
+            // Loop to generate table cells with multiplication results
             for($j=1 ; $j<=12; $j++)
             {?>
                 <td> 
                     <?php 
+                    // Display the result of multiplication
                     echo $i*$j ; ?>
                 </td>
             <?php 
