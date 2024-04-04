@@ -4,26 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Pattern</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .triangle-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .triangle-row {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .triangle-asterisk {
+            color: #ff9900;
+        }
+    </style>
 </head>
 <body>
 
 <h2>Triangle Pattern</h2>
 
-<?php
-$height = 5; // Height of the triangle
+<div class="triangle-container">
+    <?php
+    $height = 5; // Height of the triangle
 
-for ($i = 1; $i <= $height; $i++) {
-    // Printing spaces
-    for ($j = $height - $i; $j > 0; $j--) {
-        echo "&nbsp;";
+    for ($i = 1; $i <= $height; $i++) {
+        echo '<div class="triangle-row">';
+        // Printing spaces
+        for ($j = $height - $i; $j > 0; $j--) {
+            echo "&nbsp;";
+        }
+        // Printing asterisks
+        for ($k = 1; $k <= (2 * $i - 1); $k++) {
+            echo '<span class="triangle-asterisk">*</span>';
+        }
+        echo '</div>';
     }
-    // Printing asterisks
-    for ($k = 1; $k <= (2 * $i - 1); $k++) {
-        echo "*";
-    }
-    echo "<br>";
-}
-?>
+    ?>
+</div>
 
 </body>
 </html>
