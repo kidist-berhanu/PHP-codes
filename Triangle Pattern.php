@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Right-Angle Triangle Pattern</title>
     <style>
+        /* CSS styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -34,19 +35,20 @@
 </head>
 <body>
 
-<h2>Triangle Pattern</h2>
+<h2>Right-Angle Triangle Pattern</h2>
 
 <div class="triangle-container">
     <?php
     $height = 5; // Height of the triangle
 
+    // Loop through each row of the triangle
     for ($i = 1; $i <= $height; $i++) {
         echo '<div class="triangle-row">';
-        // Printing asterisks
+        // Print asterisks for the current row
         for ($k = 1; $k <= $i; $k++) {
             echo '<span class="triangle-asterisk">*</span>';
         }
-        echo '</div>';
+        echo '</div>'; // Close the row
     }
     ?>
 </div>
