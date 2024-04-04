@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triangle Pattern</title>
+    <title>Right-Angle Triangle Pattern</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,12 +42,8 @@
 
     for ($i = 1; $i <= $height; $i++) {
         echo '<div class="triangle-row">';
-        // Printing spaces
-        for ($j = $height - $i; $j > 0; $j--) {
-            echo "&nbsp;";
-        }
         // Printing asterisks
-        for ($k = 1; $k <= (2 * $i - 1); $k++) {
+        for ($k = 1; $k <= $i; $k++) {
             echo '<span class="triangle-asterisk">*</span>';
         }
         echo '</div>';
