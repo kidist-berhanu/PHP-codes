@@ -62,3 +62,8 @@
         }
         echo '</div>'; // Close the row
     }
+   ?>
+</div>
+
+</body>
+</html>
