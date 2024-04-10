@@ -51,3 +51,14 @@
         }
         echo '</div>'; 
     }
+  // Print the bottom half of the diamond
+    for ($i = $height - 1; $i >= 1; $i--) {
+        echo '<div class="diamond-row">';
+        
+        echo str_repeat(" ", $height - $i);
+       
+        for ($k = 1; $k <= $i * 2 - 1; $k++) {
+            echo '<span class="diamond-asterisk">*</span>';
+        }
+        echo '</div>'; // Close the row
+    }
