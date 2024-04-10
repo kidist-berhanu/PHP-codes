@@ -34,3 +34,20 @@
     </style>
 </head>
 <body>
+<h2>Diamond Pattern</h2>
+
+<div class="diamond-container">
+    <?php
+    $height = 5; 
+
+    // Print the top half of the diamond
+    for ($i = 1; $i <= $height; $i++) {
+        echo '<div class="diamond-row">';
+        
+        echo str_repeat(" ", $height - $i);
+       
+        for ($k = 1; $k <= $i * 2 - 1; $k++) {
+            echo '<span class="diamond-asterisk">*</span>';
+        }
+        echo '</div>'; 
+    }
