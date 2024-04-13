@@ -19,3 +19,8 @@ header {
           justify-content: space-between;
   padding: 2rem;
 }
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
