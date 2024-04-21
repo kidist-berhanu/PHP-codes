@@ -78,7 +78,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $min_value = min($numbers);
     $max_value = max($numbers);
 
-  
+    echo "<p class='result'>Minimum Value: $min_value</p>"; /* Display minimum value */
+    echo "<p class='result'>Maximum Value: $max_value</p>"; /* Display maximum value */
+}
+?>
 
 </body>
 </html>
