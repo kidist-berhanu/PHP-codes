@@ -2,54 +2,62 @@
 <html>
 <head>
     <style>
+        /* CSS styles for the body */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
+            font-family: Arial, sans-serif; /* Set the font family */
+            background-color: #f4f4f4; /* Set the background color */
+            padding: 20px; /* Add padding */
         }
 
+        /* CSS styles for the form */
         form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff; /* Set background color */
+            padding: 20px; /* Add padding */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
         }
 
+        /* CSS styles for labels */
         label {
-            font-weight: bold;
-            color: #333;
+            font-weight: bold; /* Make text bold */
+            color: #333; /* Set text color */
         }
 
+        /* CSS styles for text input */
         input[type="text"] {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+            width: 100%; /* Set width to 100% */
+            padding: 8px; /* Add padding */
+            margin-top: 5px; /* Add top margin */
+            margin-bottom: 15px; /* Add bottom margin */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 4px; /* Rounded corners */
+            box-sizing: border-box; /* Include padding and border in the width */
         }
 
+        /* CSS styles for submit button */
         input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            background-color: #4CAF50; /* Set background color */
+            color: white; /* Set text color */
+            padding: 10px 20px; /* Add padding */
+            border: none; /* Remove border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
 
+        /* CSS styles for submit button on hover */
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #45a049; /* Change background color on hover */
         }
 
+        /* CSS styles for result paragraphs */
         p {
-            margin-top: 20px;
+            margin-top: 20px; /* Add top margin */
         }
 
+        /* CSS styles for result text */
         .result {
-            font-weight: bold;
-            color: #333;
+            font-weight: bold; /* Make text bold */
+            color: #333; /* Set text color */
         }
     </style>
 </head>
@@ -70,10 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $min_value = min($numbers);
     $max_value = max($numbers);
 
-    echo "<p class='result'>Minimum Value: $min_value</p>";
-    echo "<p class='result'>Maximum Value: $max_value</p>";
-}
-?>
+  
 
 </body>
 </html>
