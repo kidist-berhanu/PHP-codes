@@ -26,7 +26,7 @@
 <body>
 
 <!-- Page heading -->
-<h1>Welcome to the Cute Random Number Generator!</h1>
+<h1>Welcome to the Random Number Generator!</h1>
 
 <!-- Description -->
 <p>Behold, the magic of randomness:</p>
