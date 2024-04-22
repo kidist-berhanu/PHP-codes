@@ -25,15 +25,21 @@
 </head>
 <body>
 
-<h1>Welcome to the Random Number Generator!</h1>
+<!-- Page heading -->
+<h1>Welcome to the Cute Random Number Generator!</h1>
 
+<!-- Description -->
 <p>Behold, the magic of randomness:</p>
 
 <?php
+// Generate a random number
 $random_number = rand();
+
+// Convert the random number to a string
 $random_number_str = (string)$random_number;
 ?>
 
+<!-- Display each digit of the random number separately -->
 <p class="random-number">
   <?php 
   // Iterate over each character of the random number string
