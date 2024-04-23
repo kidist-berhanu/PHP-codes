@@ -68,9 +68,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Check if the word was found in the sentence
     if ($position !== false) {
-        echo "<div class='result'>The word '" . htmlspecialchars($word) . "' was found at position <strong>" . $position . "</strong>.</div>";
+        echo "<div class='result'>The word '<strong>" . htmlspecialchars($word) . "</strong>' exists in the sentence.</div>";
     } else {
-        echo "<div class='result'>The word '" . htmlspecialchars($word) . "' was not found in the sentence.</div>";
+        echo "<div class='result'>The word '<strong>" . htmlspecialchars($word) . "</strong>' does not exist in the sentence.</div>";
     }
 }
 ?> 
