@@ -49,7 +49,7 @@
   <input type="text" id="sentence" name="sentence" placeholder="E.g., The quick brown fox jumps over the lazy dog."><br>
   <label for="word">Enter a word to search:</label><br>
   <input type="text" id="word" name="word" placeholder="E.g., fox"><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Search">
 </form>
 
 <?php
