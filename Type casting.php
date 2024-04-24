@@ -38,7 +38,9 @@
 </head>
 <body>
     <form method="post">
+        <!-- Input field for value -->
         <input type="text" name="value" placeholder="Enter the value">
+        <!-- Dropdown for selecting type -->
         <select name="type">
             <option value="string">String</option>
             <option value="integer">Integer</option>
@@ -46,6 +48,7 @@
             <option value="boolean">Boolean</option>
             <option value="object">Object</option>
         </select>
+        <!-- Button to submit the form -->
         <button type="submit" name="submit">Cast</button>
     </form>
 
