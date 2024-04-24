@@ -51,7 +51,7 @@
 
     <?php
     // Check if the form is submitted
-    if (isset($_POST['submit'])) {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form data
         $value = $_POST['value'];
         $type = $_POST['type'];
